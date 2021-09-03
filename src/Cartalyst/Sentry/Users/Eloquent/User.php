@@ -337,12 +337,14 @@ class User extends Model implements UserInterface {
 	 */
 	public function getPersistCode()
 	{
-		$this->persist_code = $this->getRandomString();
+		//COMMENT CODE CONSUME MUCH IN DATABASE
+		//OLL
+// 		$this->persist_code = $this->getRandomString();
 
-		// Our code got hashed
-		$persistCode = $this->persist_code;
+// 		// Our code got hashed
+// 		$persistCode = $this->persist_code;
 
-		$this->save();
+// 		$this->save();
 
 		return $persistCode;
 	}
